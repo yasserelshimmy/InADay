@@ -15,7 +15,7 @@ SPIDER_MODULES = ['InADay.spiders']
 NEWSPIDER_MODULE = 'InADay.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'InADay (+http://www.yourdomain.com)'
+USER_AGENT = 'Osama Stress test'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
