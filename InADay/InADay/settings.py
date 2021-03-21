@@ -106,7 +106,7 @@ LOG_FILE_DIR = 'data/log'
 RETRY_TIMES = 5
 
 EXTENSIONS = {
-   # 'rpath_utils.extensions.Notify': 500,
+   'rpath_utils.extensions.Notify': 500,
 }
 
 NOTIFICATION_CONFIG = {
