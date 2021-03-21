@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 class InadaySpider(scrapy.Spider):
     name = 'inaday'
     settings = get_project_settings()
-    urls = ['http://www.inaday.sa/'] * 100
+    urls = ['http://www.inaday.sa/'] * 10000
     # urls = ['http://www.inaday.sa/'] * 1
     allowed_domains = ['inaday.sa']
     # url = 'https://www.abc.com'
@@ -33,10 +33,10 @@ class InadaySpider(scrapy.Spider):
             for url in all_urls:
                 temp_url = url.attrib.get('href', url.attrib.get('src'))
                 concated_url = urljoin(response.url, temp_url)
-                yield scrapy.Request(
-                    url=concated_url,
-                    meta={'dont_redirect': True},
-                    dont_filter=True,
-                )
+                # yield scrapy.Request(
+                #     url=concated_url,
+                #     meta={'dont_redirect': True},
+                #     dont_filter=True,
+                # )
         except:
             pass
