@@ -23,7 +23,10 @@ class InadaySpider(scrapy.Spider):
         for url in self.urls:
             yield scrapy.Request(
                 url=url,
-                meta={'dont_redirect': True},
+                meta={
+                    'dont_redirect': True,
+                    'dont_merge_cookies': True
+                },
                 dont_filter=True,
             )
 
