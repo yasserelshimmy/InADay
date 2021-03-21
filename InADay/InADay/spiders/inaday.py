@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 class InadaySpider(scrapy.Spider):
     name = 'inaday'
     settings = get_project_settings()
-    urls = ['http://www.inaday.sa/'] * 1000
+    urls = ['http://www.inaday.sa/'] * 100
     # urls = ['http://www.inaday.sa/'] * 1
     allowed_domains = ['inaday.sa']
     # url = 'https://www.abc.com'
