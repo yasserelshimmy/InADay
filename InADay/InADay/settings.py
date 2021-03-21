@@ -95,60 +95,19 @@ CONCURRENT_REQUESTS = 100
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
-    # 'rpath_utils.ProxyDownloaderMiddleware': 100,
-    # 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-    # 'rpath_utils.SeleniumDownloaderMiddleware': 120,
 }
-
-ITEM_PIPELINES = {
-    # 'rpath_utils.DiscoveryPipeline': 290,
-    # 'rpath_utils.DiscoveryPipelineFC': 300,
-    # 'rpath_utils.DefaultPipeline': 310,
-}
-
-# SELENIUM_DESIRED_CAPABILITIES = {}
-# SELENIUM_HUB = 'http://<SeleniumGridHost>:4444/wd/hub'
-# USE_PROXY = "https://<ProxyHost>:<Port>"
-MAXIMIZE_WINDOW = True
-RUN_HEADLESS = False
-ENABLE_VNC = False
 
 FIELDS_TO_EXPORT = []
-
-STREAM_TO_EXCEL = True
-# SHEET_NAME = ''
 
 INPUT_FILE_PATH = 'data/input/InADay.csv'
 OUTPUT_FILE_DIR = 'data/output'
 LOG_FILE_DIR = 'data/log'
 
-# INPUT_FILE_PATH = '/N_Drive/K8s_Data/BOTs_Data/InADay/input/InADay.csv'
-# OUTPUT_FILE_DIR = '/N_Drive/K8s_Data/BOTs_Data/InADay/output'
-# LOG_FILE_DIR = '/N_Drive/K8s_Data/BOTs_Data/InADay/log'
-
-# FEED_KEYWORDS_FILE_PATH = 'W:/DiscoveryData/input/feed_keywords.csv'
-# CHANNELS_FILE_PATH = 'W:/DiscoveryData/input/Channels.csv'
-# FILTER_KEYWORDS_FILE_PATH = 'W:/DiscoveryData/input/keywords.csv'
-# FILTER_CHANNELS_FILE_PATH = 'W:/DiscoveryData/input/filtered_channels.txt'
-# PACKAGES_FILE_PATH = 'W:/DiscoveryData/input/Packages.csv'
-# COMPETITOR_NAME = '<Discovery Competitor Name>'
-
-# FEED_KEYWORDS_FILE_PATH = '/N_Drive/K8s_Data/CLUs_Configs/feed_keywords.csv'
-# CHANNELS_FILE_PATH = '/N_Drive/K8s_Data/CLUs_Configs/Channels.csv'
-# FILTER_KEYWORDS_FILE_PATH = '/N_Drive/K8s_Data/CLUs_Configs/keywords.csv'
-# FILTER_CHANNELS_FILE_PATH = '/N_Drive/K8s_Data/CLUs_Configs/filtered_channels.txt'
-# PACKAGES_FILE_PATH = '/N_Drive/K8s_Data/CLUs_Configs/Packages.csv'
-# COMPETITOR_NAME = '<Discovery Competitor Name>'
-
 RETRY_TIMES = 5
 
 EXTENSIONS = {
-   # 'rpath_utils.extensions.CID': 490,
    'rpath_utils.extensions.Notify': 500,
 }
-
-# CID_SCHEDULER_URL = 'http://172.22.150.89:8000/runjob'
-# CID_PROCESS_ID = 'p0ZssiR3iFCXfvN4'
 
 NOTIFICATION_CONFIG = {
     "smtphost": "smtp-mail.outlook.com",
